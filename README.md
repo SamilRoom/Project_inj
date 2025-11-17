@@ -61,13 +61,13 @@ data_catalog.csv (динамический каталог данных)
 
 
 Project_inj/
--│
--├── data/ # исходные данные (Walmart_Sales.csv)
--├── output/ # результаты PySpark-фильтрации
--│ └── high_amount_sales/
--├── scripts/ # скрипты проекта
--│ ├── analyse_walmart.py # основная PySpark обработка
--│ └── generate_data_catalog.py # динамический датакаталог
--├── notebooks/ # анализ, EDA
--├── data_catalog.csv # автоматически обновляемый каталог данных
--└── README.md # текущая документация
+│
+├── data/ # исходные данные (Walmart_Sales.csv)
+├── output/ # результаты PySpark-фильтрации
+│ └── high_amount_sales/
+├── scripts/ # скрипты проекта
+│ ├── analyse_walmart.py # основная PySpark обработка
+│ └── generate_data_catalog.py # динамический датакаталог
+├── notebooks/ # анализ, EDA
+├── data_catalog.csv # автоматически обновляемый каталог данных
+└── README.md # текущая документация
