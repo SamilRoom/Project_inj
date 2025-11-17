@@ -59,15 +59,25 @@ data_catalog.csv (динамический каталог данных)
 
 ## 4. Структура каталогов проекта
 
-
+```
 Project_inj/
 │
-├── data/ # исходные данные (Walmart_Sales.csv)
-├── output/ # результаты PySpark-фильтрации
-│ └── high_amount_sales/
-├── scripts/ # скрипты проекта
-│ ├── analyse_walmart.py # основная PySpark обработка
-│ └── generate_data_catalog.py # динамический датакаталог
-├── notebooks/ # анализ, EDA
-├── data_catalog.csv # автоматически обновляемый каталог данных
-└── README.md # текущая документация
+├── data/                           # Исходные данные
+│   └── Walmart_Sales.csv          # Основной датасет продаж
+│
+├── output/                         # Результаты обработки
+│   └── high_amount_sales/         # Отфильтрованные данные
+│       ├── part-00000-*.csv       # Файлы результатов
+│       └── _SUCCESS               # Файл успешного выполнения
+│
+├── scripts/                        # Исполняемые скрипты
+│   ├── analyse_walmart.py         # Основной ETL-скрипт
+│   └── generate_data_catalog.py   # Генератор датакаталога
+│
+├── notebooks/                      # Jupyter notebooks для анализа
+│   ├── 01_data_exploration.ipynb
+│   └── 02_analysis_results.ipynb
+│
+├── data_catalog.csv               # Автоматически обновляемый каталог данных
+└── README.md                      # Документация проекта
+```
