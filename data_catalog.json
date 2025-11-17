@@ -1,0 +1,163 @@
+[
+  {
+    "file_name": "Walmart_Sales.csv",
+    "relative_path": "data/Walmart_Sales.csv",
+    "file_format": ".csv",
+    "directory": "data",
+    "size_bytes": 363734,
+    "size_readable": "355.21 KB",
+    "last_modified": "2025-11-17T05:34:32.253141",
+    "hash_md5": "7fda9ce942b919452e595c7e88f7c346",
+    "catalog_generated": "2025-11-17T05:35:36.095155",
+    "columns_list": [
+      "Store",
+      "Date",
+      "Weekly_Sales",
+      "Holiday_Flag",
+      "Temperature",
+      "Fuel_Price",
+      "CPI",
+      "Unemployment"
+    ],
+    "data_types_sample": {
+      "Store": "int64",
+      "Date": "object",
+      "Weekly_Sales": "float64",
+      "Holiday_Flag": "int64",
+      "Temperature": "float64",
+      "Fuel_Price": "float64",
+      "CPI": "float64",
+      "Unemployment": "float64"
+    },
+    "records_count": 3,
+    "sample_rows_used": 500,
+    "sample_data": [
+      {
+        "Store": 1,
+        "Date": "05-02-2010",
+        "Weekly_Sales": 1643690.9,
+        "Holiday_Flag": 0,
+        "Temperature": 42.31,
+        "Fuel_Price": 2.572,
+        "CPI": 211.0963582,
+        "Unemployment": 8.106
+      },
+      {
+        "Store": 1,
+        "Date": "12-02-2010",
+        "Weekly_Sales": 1641957.44,
+        "Holiday_Flag": 1,
+        "Temperature": 38.51,
+        "Fuel_Price": 2.548,
+        "CPI": 211.2421698,
+        "Unemployment": 8.106
+      },
+      {
+        "Store": 1,
+        "Date": "19-02-2010",
+        "Weekly_Sales": 1611968.17,
+        "Holiday_Flag": 0,
+        "Temperature": 39.93,
+        "Fuel_Price": 2.514,
+        "CPI": 211.2891429,
+        "Unemployment": 8.106
+      }
+    ],
+    "notes": "",
+    "purpose": "Основной набор данных о продажах Walmart",
+    "source": "Исходные данные проекта",
+    "structure": "Еженедельные продажи по магазинам с метео и экономическими показателями",
+    "freshness": "Обновляется при загрузке новых файлов"
+  },
+  {
+    "file_name": "_SUCCESS",
+    "relative_path": "output/high_amount_sales/_SUCCESS",
+    "file_format": "",
+    "directory": "output",
+    "size_bytes": 1,
+    "size_readable": "0.00 KB",
+    "last_modified": "2025-11-17T05:34:32.253141",
+    "hash_md5": "68b329da9893e34099c7d8ad5cb9c940",
+    "catalog_generated": "2025-11-17T05:35:36.095613",
+    "columns_list": [],
+    "data_types_sample": {},
+    "records_count": null,
+    "sample_rows_used": 500,
+    "sample_data": null,
+    "notes": "",
+    "purpose": "Отфильтрованные данные о крупных продажах",
+    "source": "Результат обработки Walmart_Sales.csv",
+    "structure": "Подмножество с Weekly_Sales > 100",
+    "freshness": "Генерируется ETL-процессом"
+  },
+  {
+    "file_name": "part-00000-f145d121-c187-4d05-b0a3-c38332d36666-c000.csv",
+    "relative_path": "output/high_amount_sales/part-00000-f145d121-c187-4d05-b0a3-c38332d36666-c000.csv",
+    "file_format": ".csv",
+    "directory": "output",
+    "size_bytes": 357622,
+    "size_readable": "349.24 KB",
+    "last_modified": "2025-11-17T05:34:32.255141",
+    "hash_md5": "2f09e1ba552c1789bbe0da6a34f10526",
+    "catalog_generated": "2025-11-17T05:35:36.100002",
+    "columns_list": [
+      "Store",
+      "Date",
+      "Weekly_Sales",
+      "Holiday_Flag",
+      "Temperature",
+      "Fuel_Price",
+      "CPI",
+      "Unemployment"
+    ],
+    "data_types_sample": {
+      "Store": "int64",
+      "Date": "object",
+      "Weekly_Sales": "float64",
+      "Holiday_Flag": "int64",
+      "Temperature": "float64",
+      "Fuel_Price": "float64",
+      "CPI": "float64",
+      "Unemployment": "float64"
+    },
+    "records_count": 3,
+    "sample_rows_used": 500,
+    "sample_data": [
+      {
+        "Store": 1,
+        "Date": "05-02-2010",
+        "Weekly_Sales": 1643690.9,
+        "Holiday_Flag": 0,
+        "Temperature": 42.31,
+        "Fuel_Price": 2.572,
+        "CPI": 211.0963582,
+        "Unemployment": 8.106
+      },
+      {
+        "Store": 1,
+        "Date": "12-02-2010",
+        "Weekly_Sales": 1641957.44,
+        "Holiday_Flag": 1,
+        "Temperature": 38.51,
+        "Fuel_Price": 2.548,
+        "CPI": 211.2421698,
+        "Unemployment": 8.106
+      },
+      {
+        "Store": 1,
+        "Date": "19-02-2010",
+        "Weekly_Sales": 1611968.17,
+        "Holiday_Flag": 0,
+        "Temperature": 39.93,
+        "Fuel_Price": 2.514,
+        "CPI": 211.2891429,
+        "Unemployment": 8.106
+      }
+    ],
+    "notes": "",
+    "purpose": "Отфильтрованные данные о крупных продажах",
+    "source": "Результат обработки Walmart_Sales.csv",
+    "structure": "Подмножество с Weekly_Sales > 100",
+    "freshness": "Генерируется ETL-процессом"
+  }
+]
