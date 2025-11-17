@@ -90,5 +90,42 @@ Project_inj/
 ```bash
 pip install -r requirements.txt
 python scripts/generate_data_catalog.py
+```
+## 6. Data Description
+Walmart_Sales.csv - исходные данные о продажах
 
-## 6.Data Description
+    Store - идентификатор магазина (Integer)
+
+    Date - дата продаж (Date)
+
+    Weekly_Sales - объём продаж за неделю (Double)
+
+    Holiday_Flag - флаг праздничной недели (Integer)
+
+    Temperature - температура в регионе (Double)
+
+    Fuel_Price - цена топлива (Double)
+
+    CPI - индекс потребительских цен (Double)
+
+    Unemployment - уровень безработицы (Double)
+
+high_amount_sales/ - отфильтрованные данные о крупных продажах
+
+    Только продажи свыше 100 единиц
+
+    Используется для анализа аномалий и выбросов
+
+
+## 7. Участники проекта
+Агабеков Арнур
+
+## 8. Версия проекта
+
+v1.2
+
+Дата последнего обновления: 2025-11-17
+
+## 9. датакаталог
+
+/data_catalog.csv
