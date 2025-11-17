@@ -74,10 +74,6 @@ Project_inj/
 │   ├── analyse_walmart.py         # Основной ETL-скрипт
 │   └── generate_data_catalog.py   # Генератор датакаталога
 │
-├── notebooks/                      # Jupyter notebooks для анализа
-│   ├── 01_data_exploration.ipynb
-│   └── 02_analysis_results.ipynb
-│
 ├── data_catalog.csv               # Автоматически обновляемый каталог данных
 └── README.md                      # Документация проекта
 ```
