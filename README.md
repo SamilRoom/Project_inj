@@ -81,3 +81,14 @@ Project_inj/
 ├── data_catalog.csv               # Автоматически обновляемый каталог данных
 └── README.md                      # Документация проекта
 ```
+
+---
+
+## 5. Инструкция по запуску
+
+### Установка зависимостей
+```bash
+pip install -r requirements.txt
+python scripts/generate_data_catalog.py
+
+## 6.Data Description
